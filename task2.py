@@ -12,3 +12,11 @@
 *
 ===================================================
 """
+string = input("Please enter a word or a sentence: ")
+maximum = 0
+for i in string:
+    if string.count(i) > maximum:
+        maximum = string.count(i)
+        print(i, ":", maximum)
+
+

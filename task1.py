@@ -15,3 +15,23 @@
 * Use main() function to test your solution.
 ===================================================
 """
+
+
+def num_power(num, expo):
+    powered = num
+    if expo == 0:
+        return 1
+    if expo == 1:
+        return num
+    if expo != 1:
+        powered = (num * num_power(num, expo-1))
+        return powered
+
+
+def main():
+    num_on_expo = num_power(1, 3)
+    print("Number on the exponent is: ", num_on_expo)
+
+main()
+
+#This function will not work if passed "expo" value is a fraction or less than 0.

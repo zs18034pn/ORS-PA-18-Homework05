@@ -16,3 +16,13 @@
 * Use main() function to test your solution.
 ===================================================
 """
+
+
+def main():
+    file_name = input("Please enter the name of a file: ")
+    infile = open(file_name, "w")
+    infile.write(input("Enter the content of a file: "))
+    infile.close()
+
+
+main()
